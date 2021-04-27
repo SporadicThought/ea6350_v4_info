@@ -1,0 +1,1226 @@
+Content-Type: text/plain
+
+page generated on ***OMITTED**
+
+UpTime:
+ 08:01:21 up 18 days,  3:19, load average: 0.38, 0.22, 0.16
+
+Firmware Version: 4.0.2.201913
+Firmware Builddate: 2020-07-03 06:54
+Product.type: production
+Linux: Linux version 3.10.108 (root@build-vm) (gcc version 4.6.3 (Buildroot 2012.11.1) ) #1 SMP Thu Jul 2 23:18:55 PDT 2020
+Board: focus
+
+
+-----Boot Data-----
+cat /proc/cmdline: console=ttyS1,115200n8 root=/dev/mtdblock8 ro rootfstype=jffs2 init=/sbin/init
+
+cat /proc/mtd: dev:    size   erasesize  name
+mtd0: 07f80000 00020000 "ALL"
+mtd1: 00080000 00020000 "boot"
+mtd2: 00040000 00020000 "u_env"
+mtd3: 00040000 00020000 "Factory"
+mtd4: 00040000 00020000 "s_env"
+mtd5: 00040000 00020000 "devinfo"
+mtd6: 02800000 00020000 "kernel"
+mtd7: 02400000 00020000 "rootfs"
+mtd8: 02800000 00020000 "alt_kernel"
+mtd9: 02400000 00020000 "alt_rootfs"
+mtd10: 00100000 00020000 "sysdiag"
+mtd11: 02d00000 00020000 "syscfg"
+
+----EPROM Manufacturer Data-----
+mfg_data_version = 1
+modelNumber = EA6350
+hw_version = XB
+hw_mac_addr = ***OMITTED**
+manufacturer_date = 2020/02/20
+serial_number =  ***OMITTED**
+uuid_key = ***OMITTED**
+wps_device_pin = ***OMITTED**
+
+----syscfg get device::xxxx ---Manufacturer Data-----
+device::uuid=***OMITTED**
+device::manufacturerURL=http://www.linksys.com
+device::serial_number=***OMITTED**
+device::model_base=EA6350
+device::mac_addr=***OMITTED**
+device::manufacturerDate=2020/02/20
+device::cert_region=US
+device::modelNumber=EA6350
+device::modelDescription=Linksys Smart Wi-Fi Router AC1200
+device::manufacturer=Linksys, LLC
+device::default_ssid=***OMITTED**
+device::wps_pin=***OMITTED**
+device::hw_revision=4
+device::linksys_token=***OMITTED**
+device::deviceType=urn:home-linksys-com:device:Router:1
+
+
+syscfg get ui remote_disabled:
+1
+
+syscfg get ui remote_stunnel (use SSL):
+1
+
+syscfg get ui remote_host (remote ui host):
+cloud1.linksyssmartwifi.com
+
+syscfg get ui remote_port (remote ui port):
+443
+
+syscfg get ui remote_stunnel_verify (verify remote ui stunnel):
+1
+
+syscfg get cloud stunnel (use cloud SSL):
+1
+
+syscfg get cloud host (cloud host):
+cloud1.linksyssmartwifi.com
+
+syscfg get cloud port (cloud port):
+443
+
+syscfg get cloud stunnel_verify (verify cloud stunnel):
+1
+
+syscfg get mgmt_http_enable (can manage using http):
+1
+
+syscfg get mgmt_https_enable (can manage using https):
+1
+
+syscfg get mgmt_wifi_access (can manage wirelessly):
+1
+
+syscfg get xmpp_enabled (can manage remotely)(true if not value not set):
+1
+
+sysevent get xrac-status (xrac service state):
+started
+
+sysevent get xrac_provision_error:
+
+
+syscfg get owned_network_id:
+***OMITTED**
+
+syscfg get user_set_network_owner:
+1
+
+sysevent get phylink_wan_state (wanStatus):
+up
+
+syscfg get wan_auto_detect_enable (isDetectingWANType):
+0
+
+syscfg get wan_proto (detectedWANType):
+dhcp
+
+syscfg get bridge_mode (detectedWANType):
+0
+
+sysevent get wan-status:
+started
+
+sysevent get ipv4_wan_ipaddr:
+***OMITTED**
+
+sysevent get current_ipv6_wan_state:
+
+
+---- SQM Debug Info -----
+
+sysevent get self_setup::config_status:
+
+
+sysevent get self_setup::config_error:
+
+tail -200 /var/log/messages:
+
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: skb->mark out of range
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: skb->mark out of range
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: skb->mark out of range
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: skb->mark out of range
+***CONTINUES WITH SAME MESSAGE FOR MANY LINES. REDACTED OUTPUT FOLLOWS THIS LINE**
+**OMITTED TIMESTAMP** MT7621 local7.notice UTOPIA: fwupd.status [fwupd]   [ 1874658726 ]
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: e36, flush one!
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: ea9, flush one!
+**OMITTED TIMESTAMP** MT7621 local7.notice UTOPIA: guardian.info configurator: got event(guardian-scheduled, 1)  [ 1874664555 ]
+**OMITTED TIMESTAMP** MT7621 local7.notice UTOPIA: guardian.info +configure ipt time(1)  [ 1874664555 ]
+**OMITTED TIMESTAMP** MT7621 local7.notice UTOPIA: guardian.info -configure ipt time  [ 1874664559 ]
+**OMITTED TIMESTAMP** MT7621 local7.notice UTOPIA: fwupd.status [fwupd]   [ 1874664728 ]
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: MulticastFilterTableInsertEntry: already in Members list.
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: skb->mark out of range
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: MulticastFilterTableInsertEntry: already in Members list.
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27641]: Calling JNAP Action: 'http://linksys.com/jnap/core/CheckAdminPassword'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27641]: Handled http://linksys.com/jnap/core/CheckAdminPassword request in 0.017660 seconds...
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: MulticastFilterTableInsertEntry: already in Members list.
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27648]: Calling JNAP Action: 'http://linksys.com/jnap/core/GetDeviceInfo'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27648]: Handled http://linksys.com/jnap/core/GetDeviceInfo request in 0.099100 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27649]: Calling JNAP Action: 'http://linksys.com/jnap/ui/GetRemoteSetting'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27649]: Handled http://linksys.com/jnap/ui/GetRemoteSetting request in 0.057500 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27650]: Calling JNAP Action: 'http://linksys.com/jnap/core/CheckAdminPassword'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27651]: Calling JNAP Action: 'http://linksys.com/jnap/devicelist/GetDevices'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27650]: Handled http://linksys.com/jnap/core/CheckAdminPassword request in 0.019640 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27651]: Calling JNAP Action: 'http://linksys.com/jnap/networkconnections/GetNetworkConnections'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27651]: Handled http://linksys.com/jnap/core/Transaction request in 0.274060 seconds...
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: skb->mark out of range
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27679]: Calling JNAP Action: 'http://linksys.com/jnap/router/GetWANSettings2'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27679]: Handled http://linksys.com/jnap/router/GetWANSettings2 request in 0.118200 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27680]: Calling JNAP Action: 'http://linksys.com/jnap/wirelessscheduler/GetWirelessSchedulerSettings'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27680]: Handled http://linksys.com/jnap/wirelessscheduler/GetWirelessSchedulerSettings request in 0.082640 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27682]: Calling JNAP Action: 'http://linksys.com/jnap/router/GetWANStatus3'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27681]: Calling JNAP Action: 'http://linksys.com/jnap/guestnetwork/GetGuestRadioSettings'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27681]: Handled http://linksys.com/jnap/guestnetwork/GetGuestRadioSettings request in 0.139120 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27695]: Calling JNAP Action: 'http://linksys.com/jnap/wirelessap/GetRadioInfo'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27696]: Calling JNAP Action: 'http://linksys.com/jnap/storage/GetStorageCapabilities'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27682]: Handled http://linksys.com/jMT7621 request in 0.407140 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27695]: Handled http://linksys.com/jnap/wirelessap/GetRadioInfo request in 0.214820 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27696]: Handled http://linksys.com/jnap/storage/GetStorageCapabilities request in 0.259860 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27698]: Calling JNAP Action: 'http://linksys.com/jnap/router/GetWANStatus3'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27711]: Calling JNAP Action: 'http://linksys.com/jnap/guestnetwork/GetGuestRadioSettings'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27710]: Calling JNAP Action: 'http://linksys.com/jnap/wirelessap/GetRadioInfo'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27716]: Calling JNAP Action: 'http://linksys.com/jnap/qos/GetQoSSettings'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27711]: Handled http://linksys.com/jnap/guestnetwork/GetGuestRadioSettings request in 0.240300 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27715]: Calling JNAP Action: 'http://linksys.com/jnap/devicelist/GetDevices'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27698]: Handled http://linksys.com/jnap/router/GetWANStatus3 request in 0.455600 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27713]: Calling JNAP Action: 'http://linksys.com/jnap/parentalcontrol/GetParentalControlSettings'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27710]: Handled http://linksys.com/jnap/wirelessap/GetRadioInfo request in 0.224440 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27717]: Calling JNAP Action: 'http://linksys.com/jnap/storage/GetPartitions'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27715]: Calling JNAP Action: 'http://linksys.com/jnap/networkconnections/GetNetworkConnections'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27713]: Handled http://linksys.com/jnap/parentalcontrol/GetParentalControlSettings request in 0.096880 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27716]: Calling JNAP Action: 'http://linksys.com/jnap/qos/GetWLANQoSSettings'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27717]: Handled http://linksys.com/jnap/storage/GetPartitions request in 0.124840 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27716]: Handled http://linksys.com/jnap/core/Transaction request in 0.319900 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27715]: Handled http://linksys.com/jnap/core/Transaction request in 0.396960 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27722]: Calling JNAP Action: 'http://linksys.com/jnap/devicelist/GetDevices'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27722]: Calling JNAP Action: 'http://linksys.com/jnap/networkconnections/GetNetworkConnections'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27722]: Handled http://linksys.com/jnap/core/Transaction request in 0.250400 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27760]: Calling JNAP Action: 'http://linksys.com/jnap/wirelessscheduler/GetWirelessSchedulerSettings'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Calling JNAP Action: 'http://linksys.com/jnap/router/GetWANStatus3'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27760]: Handled http://linksys.com/jnap/wirelessscheduler/GetWirelessSchedulerSettings request in 0.084620 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Calling JNAP Action: 'http://linksys.com/jnap/wirelessap/GetRadioInfo'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Calling JNAP Action: 'http://linksys.com/jnap/router/GetWANSettings2'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27762]: Calling JNAP Action: 'http://linksys.com/jnap/wirelessap/GetRadioInfo'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Calling JNAP Action: 'http://linksys.com/jnap/locale/GetTimeSettings'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27762]: Handled http://linksys.com/jnap/wirelessap/GetRadioInfo request in 0.086060 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Calling JNAP Action: 'http://linksys.com/jnap/core/GetDeviceInfo'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Calling JNAP Action: 'http://linksys.com/jnap/router/GetEthernetPortConnections'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Calling JNAP Action: 'http://linksys.com/jnap/router/GetLANSettings'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Calling JNAP Action: 'http://linksys.com/jnap/router/GetIPv6Settings'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Calling JNAP Action: 'http://linksys.com/jnap/router/GetIPv6Settings2'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Calling JNAP Action: 'http://linksys.com/jnap/router/GetMACAddressCloneSettings'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Calling JNAP Action: 'http://linksys.com/jnap/routermanagement/GetRemoteManagementStatus'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Calling JNAP Action: 'http://linksys.com/jnap/locale/GetLocalTime'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Calling JNAP Action: 'http://linksys.com/jnap/router/GetWANStatus3'
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: skb->mark out of range
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Calling JNAP Action: 'http://linksys.com/jnap/core/GetDataUploadUserConsent'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Calling JNAP Action: 'http://linksys.com/jnap/routerlog/GetLogSettings'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Calling JNAP Action: 'http://linksys.com/jnap/routerlog/GetIncomingLogEntries'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Calling JNAP Action: 'http://linksys.com/jnap/routerlog/GetOutgoingLogEntries'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Calling JNAP Action: 'http://linksys.com/jnap/routerlog/GetSecurityLogEntries'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Calling JNAP Action: 'http://linksys.com/jnap/routerlog/GetDHCPLogEntries'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27761]: Handled http://linksys.com/jnap/core/Transaction request in 1.736740 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn utctx[27761]: (Warning):UTCTX_Lock_Release - WARNING: Held lock for 1.620520 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27788]: Calling JNAP Action: 'http://linksys.com/jnap/devicelist/GetDevices'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27787]: Calling JNAP Action: 'http://linksys.com/jnap/devicelist/GetDevices'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27787]: Calling JNAP Action: 'http://linksys.com/jnap/networkconnections/GetNetworkConnections'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27788]: Calling JNAP Action: 'http://linksys.com/jnap/networkconnections/GetNetworkConnections'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27787]: Handled http://linksys.com/jnap/core/Transaction request in 0.226380 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27788]: Handled http://linksys.com/jnap/core/Transaction request in 0.231720 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27821]: Calling JNAP Action: 'http://linksys.com/jnap/diagnostics/GetSysinfoData'
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: skb->mark out of range
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: Driver version: 4.1.2.0 
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: fw version:0.0.00 build:4a
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: build time:Fj<4>skb->mark out of range
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: skb->mark out of range
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: skb->mark out of range
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[27821]: Handled http://linksys.com/jnap/diagnostics/GetSysinfoData request in 7.370540 seconds...
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: skb->mark out of range
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[28183]: Calling JNAP Action: 'http://linksys.com/jnap/router/GetWANStatus3'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[28183]: Handled http://linksys.com/jnap/router/GetWANStatus3 request in 0.136540 seconds...
+**OMITTED TIMESTAMP** MT7621 local7.notice UTOPIA: fwupd.status [fwupd]   [ 1874670727 ]
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: skb->mark out of range
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[28450]: Calling JNAP Action: 'http://linksys.com/jnap/firmwareupdate/GetFirmwareUpdateStatus'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[28450]: Handled http://linksys.com/jnap/firmwareupdate/GetFirmwareUpdateStatus request in 0.057680 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[28451]: Calling JNAP Action: 'http://linksys.com/jnap/firmwareupdate/UpdateFirmwareNow'
+**OMITTED TIMESTAMP** MT7621 user.notice syslog: config.olympus_api unset_setting: fwup_altserver_uri [ 1874672178 ]
+**OMITTED TIMESTAMP** MT7621 user.notice syslog: config.olympus_api set_sysevent: update_firmware_now = 1 [ 1874672178 ]
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[28451]: Handled http://linksys.com/jnap/firmwareupdate/UpdateFirmwareNow request in 0.065180 seconds...
+**OMITTED TIMESTAMP** MT7621 local7.notice UTOPIA: autofwup.status update_firmware_now event : 1, 
+**OMITTED TIMESTAMP** MT7621 local7.notice UTOPIA: fwupd.status [fwupd]   [ 1874672188 ]
+**OMITTED TIMESTAMP** MT7621 local7.notice UTOPIA: fwupd.status Starting fwupd  [ 1874672188 ]
+**OMITTED TIMESTAMP** MT7621 local7.err UTOPIA: fwupd.status No update found  [ 1874672234 ]
+**OMITTED TIMESTAMP** MT7621 daemon.warn utctx[28461]: (Warning):UTCTX_Lock_Release - WARNING: Held lock for 1.366640 seconds...
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[28490]: Calling JNAP Action: 'http://linksys.com/jnap/diagnostics/SendSysinfoEmail'
+**OMITTED TIMESTAMP** MT7621 local7.err UTOPIA: fwupd.status no firmware available  [ 1874672371 ]
+**OMITTED TIMESTAMP** MT7621 local7.notice UTOPIA: fwupd.status status details:""  [ 1874672371 ]
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: skb->mark out of range
+**OMITTED TIMESTAMP** MT7621 local7.notice UTOPIA: data_uploader.status Received event: email_sysinfo
+**OMITTED TIMESTAMP** MT7621 user.notice root: wait_till_end_state: data_uploader - started
+**OMITTED TIMESTAMP** MT7621 local7.notice UTOPIA: data_uploader.status data_uploader service stopped
+**OMITTED TIMESTAMP** MT7621 user.notice root: wait_till_end_state: data_uploader - stopped
+**OMITTED TIMESTAMP** MT7621 local7.notice UTOPIA: data_uploader.status data_uploader service started
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: skb->mark out of range
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[28545]: Calling JNAP Action: 'http://linksys.com/jnap/firmwareupdate/GetFirmwareUpdateStatus'
+**OMITTED TIMESTAMP** MT7621 daemon.warn jnapcgi[28545]: Handled http://linksys.com/jnap/firmwareupdate/GetFirmwareUpdateStatus request in 0.057880 seconds...
+**OMITTED TIMESTAMP** MT7621 kern.warn kernel: skb->mark out of range
+
+dmesg | tail -200:
+
+
+skb->mark out of range
+MulticastFilterTableInsertEntry: already in Members list.
+skb->mark out of range
+53e, flush one!
+MulticastFilterTableInsertEntry: already in Members list.
+MulticastFilterTableInsertEntry: already in Members list.
+MulticastFilterTableInsertEntry: already in Members list.
+
+MulticastFilterTableInsertEntry: already in Members list.
+MulticastFilterTableInsertEntry: already in Members list.
+skb->mark out of range
+MulticastFilterTableInsertEntry: already in Members list.
+e36, flush one!
+ea9, flush one!
+Driver version: 4.1.2.0 
+fw version:0.0.00 build:4a
+build time:FjXc|ƒT„ÿ
+***ABOVE DMESG REDACTED FOR DUPLICATE "SKB" KERNEL MSGS**
+
+ps:
+
+  PID USER       VSZ STAT COMMAND
+    1 root      1608 S    init       
+    2 root         0 SW   [kthreadd]
+    3 root         0 SW   [ksoftirqd/0]
+    5 root         0 SW<  [kworker/0:0H]
+    6 root         0 SW   [kworker/u8:0]
+    7 root         0 SW   [migration/0]
+    8 root         0 SW   [rcu_bh]
+    9 root         0 SW   [rcu_sched]
+   10 root         0 SW   [migration/1]
+   11 root         0 SW   [ksoftirqd/1]
+   12 root         0 SW   [kworker/1:0]
+   13 root         0 SW<  [kworker/1:0H]
+   14 root         0 SW   [migration/2]
+   15 root         0 SW   [ksoftirqd/2]
+   16 root         0 SW   [kworker/2:0]
+   17 root         0 SW<  [kworker/2:0H]
+   18 root         0 SW   [migration/3]
+   19 root         0 SW   [ksoftirqd/3]
+   21 root         0 SW<  [kworker/3:0H]
+   22 root         0 SW<  [khelper]
+   23 root         0 SW   [kdevtmpfs]
+   24 root         0 SW<  [netns]
+   35 root         0 SW   [kworker/3:1]
+   36 root         0 SW   [kworker/2:1]
+   37 root         0 SW   [kworker/1:1]
+  208 root         0 SW<  [writeback]
+  211 root         0 SW<  [bioset]
+  212 root         0 SW<  [crypto]
+  214 root         0 SW<  [kblockd]
+  220 root         0 SW<  [ata_sff]
+  230 root         0 SW   [khubd]
+  233 root         0 SW<  [md]
+  260 root         0 SW<  [rpciod]
+  261 root         0 SW   [kworker/0:1]
+  266 root         0 SW   [kswapd0]
+  267 root         0 SWN  [ksmd]
+  268 root         0 SW   [fsnotify_mark]
+  269 root         0 SW<  [nfsiod]
+  270 root         0 SW<  [cifsiod]
+  914 root         0 SW<  [bond0]
+  979 root         0 SW<  [ipv6_addrconf]
+  992 root         0 SW<  [deferwq]
+ 1037 root      1004 S <  /sbin/udevd --daemon 
+ 1902 root      1600 S    /sbin/klogd 
+ 2352 root         0 SW   [ubi_bgt0d]
+ 2357 root         0 SW   [ubifs_bgt0_0]
+ 2367 root      1604 S    /sbin/syslogd -l 6 
+ 2370 root     91840 S    /sbin/syseventd 
+ 2386 root      1000 S    syseventd_fork_helper 8 
+ 3815 root      1008 S    /usr/sbin/bdutil 
+ 3820 root      1008 S    /usr/sbin/bdutil 
+ 3826 root      1612 S    -/sbin/getty -L ttyS1 115200 
+ 4008 root     11020 S    /usr/sbin/linkmgr 
+ 4255 root      1584 S    trigger 
+ 4538 root      1256 S    mdnsd 
+ 4743 root     12804 S    stunnel /tmp/stunnel.conf 
+ 4927 root      1036 S    /sbin/dns-sd -R myrouter _http._tcp local 80 
+ 5017 nobody    1832 S    /sbin/dnsmasq -u nobody --dhcp-authoritative --disabl
+ 5018 root      1656 S    /sbin/dnsmasq -u nobody --dhcp-authoritative --disabl
+ 5162 root      5564 S    devidentd -x /tmp/var/config/devidentd/devregex.json 
+ 5371 root      5736 S    lighttpd -f /etc/lighttpd.conf 
+ 5400 root      1056 S    lld2d br0 
+ 5495 root      5904 S    /usr/bin/redirector 
+ 5665 root     15508 S <  /usr/bin/guardian 
+ 5683 root      1212 S    iwevent 
+ 6646 root         0 SW   [kworker/u8:3]
+ 6754 root         0 SW   [RtmpCmdQTask]
+ 6755 root         0 SW   [RtmpWscTask]
+ 6756 root         0 SW   [RtmpMlmeTask]
+ 7341 root         0 SW   [kworker/0:2]
+ 8791 root         0 SW   [RtmpCmdQTask]
+ 8792 root         0 SW   [RtmpWscTask]
+ 8793 root         0 SW   [HwCtrlTask]
+ 8794 root         0 SW   [ser_task]
+ 9057 root         0 SW   [RtmpMlmeTask]
+ 9233 root      1464 S <  /usr/bin/nfqrecv 
+ 9324 root         0 SW   [kworker/3:2]
+ 9953 root      1260 S    /sbin/dhcp6s -P /var/run/dhcp6s.pid br0 
+10229 root      1616 S    udhcpc -R -S -b -i eth3 -h **OMITTED** -p /var/run/wan_
+10984 root       752 S    wscd -m 1 -w /etc/Wireless -a **OMITTED ROUTER LOCAL IP** -i ra0 
+10990 root       752 S    wscd -m 1 -w /etc/Wireless -a **OMITTED ROUTER LOCAL IP** -i ra0 
+10991 root       752 S    wscd -m 1 -w /etc/Wireless -a **OMITTED ROUTER LOCAL IP** -i ra0 
+10992 root       752 S    wscd -m 1 -w /etc/Wireless -a **OMITTED ROUTER LOCAL IP** -i ra0 
+10993 root       752 S    wscd -m 1 -w /etc/Wireless -a **OMITTED ROUTER LOCAL IP** -i ra0 
+10997 root       752 S    wscd -m 1 -w /etc/Wireless -a **OMITTED ROUTER LOCAL IP** -i ra0 
+10999 root       752 S    wscd -m 1 -w /etc/Wireless -a **OMITTED ROUTER LOCAL IP** -i ra0 
+11000 root       752 S    wscd -m 1 -w /etc/Wireless -a **OMITTED ROUTER LOCAL IP** -i ra0 
+11425 root      4600 S    /sbin/nmbd -D 
+11812 root      8256 S    /sbin/smbd 
+11813 root      8256 S    /sbin/smbd 
+13446 root      8252 S    lua /usr/local/lib/lua/5.1/xrac.lua --retry NULL 
+13661 quagga    3004 S    /usr/sbin/zebra -d -f /etc/zebra.conf 
+13711 root      1620 S    crond -l 9 -c /var/spool/cron/crontabs/ 
+16000 root       752 S    wscd -m 1 -w /etc/Wireless -a **OMITTED ROUTER LOCAL IP** -i ra0 
+20043 root       752 S    wscd -m 1 -w /etc/Wireless -a **OMITTED ROUTER LOCAL IP** -i ra0 
+28490 root      9356 S    /www/JNAP/index.cgi 
+28515 root      1640 S    /bin/sh /etc/init.d/service_data_uploader.sh email_sy
+28547 root      1696 S    /bin/sh /www/sysinfo.cgi 
+28610 root      1608 R    ps 
+disk usage:
+
+Filesystem           1K-blocks      Used Available Use% Mounted on
+/dev/root                40960     31724      9236  77% /
+devtmpfs                   100         4        96   4% /dev
+mdev                       100         4        96   4% /dev
+none                     40960      1712     39248   4% /tmp
+ubi0_0                   36696       464     34324   1% /tmp/var/config
+
+Memory Use:
+free
+              total         used         free       shared      buffers
+  Mem:       116564        76372        40192            0            0
+ Swap:            0            0            0
+Total:       116564        76372        40192
+
+cat /proc/locks
+1: POSIX  ADVISORY  WRITE 13661 00:0d:3930691 0 EOF
+2: POSIX  ADVISORY  READ  11812 00:0d:18159 4 4
+3: POSIX  ADVISORY  READ  11812 00:0d:18158 4 4
+4: POSIX  ADVISORY  READ  11812 00:0d:18157 4 4
+5: POSIX  ADVISORY  READ  11812 00:0d:18156 4 4
+6: POSIX  ADVISORY  READ  11812 00:0d:12417 4 4
+7: POSIX  ADVISORY  WRITE 11812 00:0d:18155 0 0
+8: POSIX  ADVISORY  READ  11425 00:0d:12417 4 4
+9: POSIX  ADVISORY  WRITE 11425 00:0d:15206 0 0
+10: FLOCK  ADVISORY  WRITE 4803 00:0d:7624 0 EOF
+
+cat /proc/modules
+hw_nat 36752 0 - Live 0xc22c7000
+mt7603_wifi 1978774 1 - Live 0xc0e9f000
+nf_nat_ftp 1440 0 - Live 0xc0a5e000
+nf_conntrack_ftp 6176 1 nf_nat_ftp, Live 0xc0a56000
+mod_bdutil 5096 0 - Live 0xc00ea000 (O)
+
+cat /proc/slabinfo
+slabinfo - version: 2.1
+# name            <active_objs> <num_objs> <objsize> <objperslab> <pagesperslab> : tunables <limit> <batchcount> <sharedfactor> : slabdata <active_slabs> <num_slabs> <sharedavail>
+ubi_wl_entry_slab    360    435     24  145    1 : tunables  120   60    8 : slabdata      3      3      0
+ubifs_inode_slab      50     72    424    9    1 : tunables   54   27    8 : slabdata      8      8      0
+bridge_fdb_cache      12     59     64   59    1 : tunables  120   60    8 : slabdata      1      1      0
+fib6_nodes             9    113     32  113    1 : tunables  120   60    8 : slabdata      1      1      0
+ip6_dst_cache         16     45    256   15    1 : tunables  120   60    8 : slabdata      3      3      0
+ip6_mrt_cache          0      0    128   30    1 : tunables  120   60    8 : slabdata      0      0      0
+RAWv6                  8     15    768    5    1 : tunables   54   27    8 : slabdata      3      3      0
+UDPLITEv6              0      0    768    5    1 : tunables   54   27    8 : slabdata      0      0      0
+UDPv6                  6     15    768    5    1 : tunables   54   27    8 : slabdata      3      3      0
+tw_sock_TCPv6          0      0    192   20    1 : tunables  120   60    8 : slabdata      0      0      0
+request_sock_TCPv6      0      0    128   30    1 : tunables  120   60    8 : slabdata      0      0      0
+TCPv6                  8     10   1408    5    2 : tunables   24   12    8 : slabdata      2      2      0
+ip_vs_conn             0      0    256   15    1 : tunables  120   60    8 : slabdata      0      0      0
+nf_conntrack_81c4a540    261    378    216   18    1 : tunables  120   60    8 : slabdata     21     21      0
+nf_conntrack_expect      0      0    160   24    1 : tunables  120   60    8 : slabdata      0      0      0
+flow_cache             0      0     88   44    1 : tunables  120   60    8 : slabdata      0      0      0
+sd_ext_cdb             2    113     32  113    1 : tunables  120   60    8 : slabdata      1      1      0
+bsg_cmd                0      0    288   13    1 : tunables   54   27    8 : slabdata      0      0      0
+mqueue_inode_cache      2      7    576    7    1 : tunables   54   27    8 : slabdata      1      1      0
+jffs2_xattr_ref        0      0     32  113    1 : tunables  120   60    8 : slabdata      0      0      0
+jffs2_xattr_datum      0      0     56   67    1 : tunables  120   60    8 : slabdata      0      0      0
+jffs2_inode_cache   3949   4068     32  113    1 : tunables  120   60    8 : slabdata     36     36      0
+jffs2_node_frag     6932   7105     24  145    1 : tunables  120   60    8 : slabdata     49     49      0
+jffs2_refblock       932    944    248   16    1 : tunables  120   60    8 : slabdata     59     59      0
+jffs2_tmp_dnode        0      0     40   92    1 : tunables  120   60    8 : slabdata      0      0      0
+jffs2_raw_inode        8     30    128   30    1 : tunables  120   60    8 : slabdata      1      1      0
+jffs2_raw_dirent       0      0     64   59    1 : tunables  120   60    8 : slabdata      0      0      0
+jffs2_full_dnode    7232   7308     16  203    1 : tunables  120   60    8 : slabdata     36     36      0
+jffs2_i              873    890    376   10    1 : tunables   54   27    8 : slabdata     89     89      0
+cifs_small_rq         30     36    448    9    1 : tunables   54   27    8 : slabdata      4      4      0
+cifs_request           4      4  16512    1    8 : tunables    8    4    0 : slabdata      4      4      0
+cifs_mpx_ids           3     59     64   59    1 : tunables  120   60    8 : slabdata      1      1      0
+cifs_inode_cache       0      0    400   10    1 : tunables   54   27    8 : slabdata      0      0      0
+nfs_direct_cache       0      0    120   32    1 : tunables  120   60    8 : slabdata      0      0      0
+nfs_commit_data        4      9    448    9    1 : tunables   54   27    8 : slabdata      1      1      0
+nfs_write_data        32     36    640    6    1 : tunables   54   27    8 : slabdata      6      6      0
+nfs_read_data          0      0    576    7    1 : tunables   54   27    8 : slabdata      0      0      0
+nfs_inode_cache        0      0    640    6    1 : tunables   54   27    8 : slabdata      0      0      0
+nfs_page               0      0     64   59    1 : tunables  120   60    8 : slabdata      0      0      0
+fat_inode_cache        0      0    416    9    1 : tunables   54   27    8 : slabdata      0      0      0
+fat_cache              0      0     24  145    1 : tunables  120   60    8 : slabdata      0      0      0
+squashfs_inode_cache      0      0    384   10    1 : tunables   54   27    8 : slabdata      0      0      0
+jbd2_transaction_s      0      0    192   20    1 : tunables  120   60    8 : slabdata      0      0      0
+jbd2_inode             0      0     24  145    1 : tunables  120   60    8 : slabdata      0      0      0
+jbd2_journal_handle      0      0     32  113    1 : tunables  120   60    8 : slabdata      0      0      0
+jbd2_journal_head      0      0     64   59    1 : tunables  120   60    8 : slabdata      0      0      0
+jbd2_revoke_table_s      0      0     16  203    1 : tunables  120   60    8 : slabdata      0      0      0
+jbd2_revoke_record_s      0      0     32  113    1 : tunables  120   60    8 : slabdata      0      0      0
+ext4_inode_cache       0      0    600    6    1 : tunables   54   27    8 : slabdata      0      0      0
+ext4_xattr             0      0     56   67    1 : tunables  120   60    8 : slabdata      0      0      0
+ext4_free_data         0      0     40   92    1 : tunables  120   60    8 : slabdata      0      0      0
+ext4_allocation_context      0      0    112   35    1 : tunables  120   60    8 : slabdata      0      0      0
+ext4_prealloc_space      0      0     72   53    1 : tunables  120   60    8 : slabdata      0      0      0
+ext4_system_zone       0      0     32  113    1 : tunables  120   60    8 : slabdata      0      0      0
+ext4_io_end            0      0     40   92    1 : tunables  120   60    8 : slabdata      0      0      0
+ext4_extent_status      0      0     32  113    1 : tunables  120   60    8 : slabdata      0      0      0
+kioctx                 0      0    448    9    1 : tunables   54   27    8 : slabdata      0      0      0
+kiocb                  0      0    128   30    1 : tunables  120   60    8 : slabdata      0      0      0
+inotify_event_private_data     45    203     16  203    1 : tunables  120   60    8 : slabdata      1      1      0
+inotify_inode_mark      3     53     72   53    1 : tunables  120   60    8 : slabdata      1      1      0
+dnotify_mark           0      0     72   53    1 : tunables  120   60    8 : slabdata      0      0      0
+dnotify_struct         0      0     24  145    1 : tunables  120   60    8 : slabdata      0      0      0
+dio                    0      0    384   10    1 : tunables   54   27    8 : slabdata      0      0      0
+fasync_cache           0      0     32  113    1 : tunables  120   60    8 : slabdata      0      0      0
+ksm_mm_slot            0      0     24  145    1 : tunables  120   60    8 : slabdata      0      0      0
+ksm_stable_node        0      0     24  145    1 : tunables  120   60    8 : slabdata      0      0      0
+ksm_rmap_item          0      0     32  113    1 : tunables  120   60    8 : slabdata      0      0      0
+pid_namespace          0      0     80   48    1 : tunables  120   60    8 : slabdata      0      0      0
+posix_timers_cache      1     26    152   26    1 : tunables  120   60    8 : slabdata      1      1      0
+uid_cache              1     59     64   59    1 : tunables  120   60    8 : slabdata      1      1      0
+rpc_inode_cache        0      0    384   10    1 : tunables   54   27    8 : slabdata      0      0      0
+rpc_buffers            8      8   2048    2    1 : tunables   24   12    8 : slabdata      4      4      0
+rpc_tasks              8     30    128   30    1 : tunables  120   60    8 : slabdata      1      1      0
+UNIX                  74     96    640    6    1 : tunables   54   27    8 : slabdata     16     16      0
+ip_mrt_cache           0      0    128   30    1 : tunables  120   60    8 : slabdata      0      0      0
+UDP-Lite               0      0    576    7    1 : tunables   54   27    8 : slabdata      0      0      0
+tcp_bind_bucket       22    113     32  113    1 : tunables  120   60    8 : slabdata      1      1      0
+inet_peer_cache       41     90    128   30    1 : tunables  120   60    8 : slabdata      3      3      0
+secpath_cache          0      0     32  113    1 : tunables  120   60    8 : slabdata      0      0      0
+xfrm_dst_cache         0      0    320   12    1 : tunables   54   27    8 : slabdata      0      0      0
+ip_fib_trie           14    113     32  113    1 : tunables  120   60    8 : slabdata      1      1      0
+ip_fib_alias          15    145     24  145    1 : tunables  120   60    8 : slabdata      1      1      0
+ip_dst_cache          32    120    128   30    1 : tunables  120   60    8 : slabdata      4      4      0
+PING                   0      0    576    7    1 : tunables   54   27    8 : slabdata      0      0      0
+RAW                   10     14    576    7    1 : tunables   54   27    8 : slabdata      2      2      0
+UDP                   22     49    576    7    1 : tunables   54   27    8 : slabdata      6      7      0
+tw_sock_TCP           13     60    128   30    1 : tunables  120   60    8 : slabdata      2      2      0
+request_sock_TCP      11     30    128   30    1 : tunables  120   60    8 : slabdata      1      1      0
+TCP                   14     21   1216    3    1 : tunables   24   12    8 : slabdata      7      7      0
+eventpoll_pwq         11     92     40   92    1 : tunables  120   60    8 : slabdata      1      1      0
+eventpoll_epi         11     30    128   30    1 : tunables  120   60    8 : slabdata      1      1      0
+sgpool-128             2      2   2048    2    1 : tunables   24   12    8 : slabdata      1      1      0
+sgpool-64              2      4   1024    4    1 : tunables   54   27    8 : slabdata      1      1      0
+sgpool-32              2      8    512    8    1 : tunables   54   27    8 : slabdata      1      1      0
+sgpool-16              2     15    256   15    1 : tunables  120   60    8 : slabdata      1      1      0
+sgpool-8               2     30    128   30    1 : tunables  120   60    8 : slabdata      1      1      0
+scsi_data_buffer       0      0     24  145    1 : tunables  120   60    8 : slabdata      0      0      0
+blkdev_queue          37     42   1088    7    2 : tunables   24   12    8 : slabdata      6      6      0
+blkdev_requests       48     54    216   18    1 : tunables  120   60    8 : slabdata      3      3      0
+blkdev_ioc             0      0     64   59    1 : tunables  120   60    8 : slabdata      0      0      0
+fsnotify_event_holder      0      0     16  203    1 : tunables  120   60    8 : slabdata      0      0      0
+fsnotify_event        13     59     64   59    1 : tunables  120   60    8 : slabdata      1      1      0
+bio-0                  2     30    128   30    1 : tunables  120   60    8 : slabdata      1      1      0
+biovec-256             2      2   3072    2    2 : tunables   24   12    8 : slabdata      1      1      0
+biovec-128             0      0   1536    5    2 : tunables   24   12    8 : slabdata      0      0      0
+biovec-64              0      0    768    5    1 : tunables   54   27    8 : slabdata      0      0      0
+biovec-16              0      0    192   20    1 : tunables  120   60    8 : slabdata      0      0      0
+sock_inode_cache     164    200    384   10    1 : tunables   54   27    8 : slabdata     20     20      0
+skbuff_fclone_cache      4     18    448    9    1 : tunables   54   27    8 : slabdata      2      2      0
+skbuff_head_cache   1536   2420    192   20    1 : tunables  120   60    8 : slabdata    121    121      0
+file_lock_cache       51    105    112   35    1 : tunables  120   60    8 : slabdata      3      3      0
+net_namespace          0      0   2432    3    2 : tunables   24   12    8 : slabdata      0      0      0
+shmem_inode_cache   3360   3390    368   10    1 : tunables   54   27    8 : slabdata    339    339      0
+pool_workqueue         8     30    256   15    1 : tunables  120   60    8 : slabdata      2      2      0
+proc_inode_cache     469    561    360   11    1 : tunables   54   27    8 : slabdata     51     51      0
+sigqueue               7     54    144   27    1 : tunables  120   60    8 : slabdata      2      2      0
+bdev_cache             4     14    512    7    1 : tunables   54   27    8 : slabdata      2      2      0
+sysfs_dir_cache     7913   7965     64   59    1 : tunables  120   60    8 : slabdata    135    135      0
+mnt_cache             53     60    192   20    1 : tunables  120   60    8 : slabdata      3      3      0
+filp                1380   2160    192   20    1 : tunables  120   60    8 : slabdata    108    108    480
+inode_cache          360    360    328   12    1 : tunables   54   27    8 : slabdata     30     30      0
+dentry              5713   5713    136   29    1 : tunables  120   60    8 : slabdata    197    197      0
+names_cache           50     50   4096    1    1 : tunables   24   12    8 : slabdata     50     50      0
+key_jar                2     30    128   30    1 : tunables  120   60    8 : slabdata      1      1      0
+buffer_head            0      0     64   59    1 : tunables  120   60    8 : slabdata      0      0      0
+nsproxy                1    145     24  145    1 : tunables  120   60    8 : slabdata      1      1      0
+vm_area_struct      1788   2240     96   40    1 : tunables  120   60    8 : slabdata     56     56    180
+mm_struct            135    153    448    9    1 : tunables   54   27    8 : slabdata     17     17      0
+fs_cache             187    413     64   59    1 : tunables  120   60    8 : slabdata      7      7      0
+files_cache          187    240    256   15    1 : tunables  120   60    8 : slabdata     16     16      0
+signal_cache         189    280    576    7    1 : tunables   54   27    8 : slabdata     40     40      0
+sighand_cache        124    124   3136    2    2 : tunables   24   12    8 : slabdata     62     62      0
+task_struct          161    195   1240    3    1 : tunables   24   12    8 : slabdata     65     65      0
+cred_jar             405    960    128   30    1 : tunables  120   60    8 : slabdata     32     32      0
+anon_vma_chain      1458   1921     32  113    1 : tunables  120   60    8 : slabdata     17     17     60
+anon_vma            1186   1356     32  113    1 : tunables  120   60    8 : slabdata     12     12    120
+pid                  264    590     64   59    1 : tunables  120   60    8 : slabdata     10     10      0
+radix_tree_node      481    481    296   13    1 : tunables   54   27    8 : slabdata     37     37      0
+idr_layer_cache      119    119   1080    7    2 : tunables   24   12    8 : slabdata     17     17      0
+dma-kmalloc-4194304      0      0 4194304    1 1024 : tunables    1    1    0 : slabdata      0      0      0
+dma-kmalloc-2097152      0      0 2097152    1  512 : tunables    1    1    0 : slabdata      0      0      0
+dma-kmalloc-1048576      0      0 1048576    1  256 : tunables    1    1    0 : slabdata      0      0      0
+dma-kmalloc-524288      0      0 524288    1  128 : tunables    1    1    0 : slabdata      0      0      0
+dma-kmalloc-262144      0      0 262144    1   64 : tunables    1    1    0 : slabdata      0      0      0
+dma-kmalloc-131072      0      0 131072    1   32 : tunables    8    4    0 : slabdata      0      0      0
+dma-kmalloc-65536      0      0  65536    1   16 : tunables    8    4    0 : slabdata      0      0      0
+dma-kmalloc-32768      0      0  32768    1    8 : tunables    8    4    0 : slabdata      0      0      0
+dma-kmalloc-16384      0      0  16384    1    4 : tunables    8    4    0 : slabdata      0      0      0
+dma-kmalloc-8192       0      0   8192    1    2 : tunables    8    4    0 : slabdata      0      0      0
+dma-kmalloc-4096       0      0   4096    1    1 : tunables   24   12    8 : slabdata      0      0      0
+dma-kmalloc-2048       0      0   2048    2    1 : tunables   24   12    8 : slabdata      0      0      0
+dma-kmalloc-1024       0      0   1024    4    1 : tunables   54   27    8 : slabdata      0      0      0
+dma-kmalloc-512        0      0    512    8    1 : tunables   54   27    8 : slabdata      0      0      0
+dma-kmalloc-256        0      0    256   15    1 : tunables  120   60    8 : slabdata      0      0      0
+dma-kmalloc-128        0      0    128   30    1 : tunables  120   60    8 : slabdata      0      0      0
+kmalloc-4194304        0      0 4194304    1 1024 : tunables    1    1    0 : slabdata      0      0      0
+kmalloc-2097152        0      0 2097152    1  512 : tunables    1    1    0 : slabdata      0      0      0
+kmalloc-1048576        1      1 1048576    1  256 : tunables    1    1    0 : slabdata      1      1      0
+kmalloc-524288         0      0 524288    1  128 : tunables    1    1    0 : slabdata      0      0      0
+kmalloc-262144         2      2 262144    1   64 : tunables    1    1    0 : slabdata      2      2      0
+kmalloc-131072         7      7 131072    1   32 : tunables    8    4    0 : slabdata      7      7      0
+kmalloc-65536         13     13  65536    1   16 : tunables    8    4    0 : slabdata     13     13      0
+kmalloc-32768          5      5  32768    1    8 : tunables    8    4    0 : slabdata      5      5      0
+kmalloc-16384          8      9  16384    1    4 : tunables    8    4    0 : slabdata      8      9      0
+kmalloc-8192         272    272   8192    1    2 : tunables    8    4    0 : slabdata    272    272      0
+kmalloc-4096          40     41   4096    1    1 : tunables   24   12    8 : slabdata     40     41      0
+kmalloc-2048        1816   1826   2048    2    1 : tunables   24   12    8 : slabdata    913    913      0
+kmalloc-1024         628    644   1024    4    1 : tunables   54   27    8 : slabdata    161    161      0
+kmalloc-512          796    832    512    8    1 : tunables   54   27    8 : slabdata    104    104      0
+kmalloc-256         1536   1605    256   15    1 : tunables  120   60    8 : slabdata    107    107      0
+kmalloc-128        17173  17370    128   30    1 : tunables  120   60    8 : slabdata    579    579      0
+kmem_cache           171    210    128   30    1 : tunables  120   60    8 : slabdata      7      7      0
+
+cat /proc/vmstat
+nr_free_pages 10051
+nr_inactive_anon 250
+nr_active_anon 3136
+nr_inactive_file 2272
+nr_active_file 3091
+nr_unevictable 0
+nr_mlock 0
+nr_anon_pages 2954
+nr_mapped 2299
+nr_file_pages 5807
+nr_dirty 0
+nr_writeback 0
+nr_slab_reclaimable 434
+nr_slab_unreclaimable 4891
+nr_page_table_pages 144
+nr_kernel_stack 122
+nr_unstable 0
+nr_bounce 0
+nr_vmscan_write 0
+nr_vmscan_immediate_reclaim 0
+nr_writeback_temp 0
+nr_isolated_anon 0
+nr_isolated_file 0
+nr_shmem 444
+nr_dirtied 16701
+nr_written 16701
+nr_anon_transparent_hugepages 0
+nr_free_cma 0
+nr_dirty_threshold 2040
+nr_dirty_background_threshold 1020
+pgpgin 4
+pgpgout 4
+pswpin 0
+pswpout 0
+pgalloc_dma 895
+pgalloc_normal 254640035
+pgalloc_movable 0
+pgfree 254651065
+pgactivate 79401
+pgdeactivate 562
+pgfault 768314648
+pgmajfault 929
+pgrefill_dma 0
+pgrefill_normal 0
+pgrefill_movable 0
+pgsteal_kswapd_dma 0
+pgsteal_kswapd_normal 0
+pgsteal_kswapd_movable 0
+pgsteal_direct_dma 0
+pgsteal_direct_normal 0
+pgsteal_direct_movable 0
+pgscan_kswapd_dma 0
+pgscan_kswapd_normal 0
+pgscan_kswapd_movable 0
+pgscan_direct_dma 0
+pgscan_direct_normal 0
+pgscan_direct_movable 0
+pgscan_direct_throttle 0
+pginodesteal 0
+slabs_scanned 15360
+kswapd_inodesteal 0
+kswapd_low_wmark_hit_quickly 0
+kswapd_high_wmark_hit_quickly 0
+pageoutrun 1
+allocstall 0
+pgrotated 45
+unevictable_pgs_culled 0
+unevictable_pgs_scanned 0
+unevictable_pgs_rescued 0
+unevictable_pgs_mlocked 0
+unevictable_pgs_munlocked 0
+unevictable_pgs_cleared 0
+unevictable_pgs_stranded 0
+
+CPU Information
+cat /proc/stat
+cpu  942304 0 2012405 620948153 294 0 2959849 0 0 0
+cpu0 296696 0 362720 155958913 62 0 97414 0 0 0
+cpu1 175708 0 432007 155576286 66 0 531718 0 0 0
+cpu2 278968 0 770750 153519054 65 0 2146911 0 0 0
+cpu3 190932 0 446928 155893898 100 0 183805 0 0 0
+intr 2265716745 0 0 0 195796586 366737578 0 0 391789499 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8 50559655 0 13815 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7361181 8310691 10777067 9887544 19548076 398983385 407090175 398861485 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ctxt 826016235
+btime 1617943323
+processes 6538730
+procs_running 1
+procs_blocked 0
+softirq 3569689125 608167958 1567157468 54235827 144195180 0 0 0 1119247098 0 76685594
+
+top -bn1
+Mem: 76476K used, 40088K free, 0K shrd, 0K buff, 23228K cached
+CPU:  0.0% usr  2.1% sys  0.0% nic 95.6% idle  0.0% io  0.0% irq  2.1% sirq
+Load average: 0.39 0.23 0.16 1/120 28620
+  PID  PPID USER     STAT   VSZ %MEM CPU %CPU COMMAND
+28619 28618 root     R     1612  1.3   2  2.1 top -bn1 
+ 2370     1 root     S    91840 78.7   1  0.0 /sbin/syseventd 
+ 5665     1 root     S <  15508 13.3   3  0.0 /usr/bin/guardian 
+ 4743     1 root     S    12804 10.9   1  0.0 stunnel /tmp/stunnel.conf 
+ 4008     1 root     S    11020  9.4   3  0.0 /usr/sbin/linkmgr 
+28490  5371 root     S     9356  8.0   2  0.0 /www/JNAP/index.cgi 
+11812     1 root     S     8256  7.0   3  0.0 /sbin/smbd 
+11813 11812 root     S     8256  7.0   3  0.0 /sbin/smbd 
+13446     1 root     S     8252  7.0   0  0.0 lua /usr/local/lib/lua/5.1/xrac.lu
+ 5495     1 root     S     5904  5.0   2  0.0 /usr/bin/redirector 
+ 5371     1 root     S     5736  4.9   1  0.0 lighttpd -f /etc/lighttpd.conf 
+ 5162     1 root     S     5564  4.7   3  0.0 devidentd -x /tmp/var/config/devid
+11425     1 root     S     4600  3.9   3  0.0 /sbin/nmbd -D 
+13661     1 quagga   S     3004  2.5   2  0.0 /usr/sbin/zebra -d -f /etc/zebra.c
+ 5017     1 nobody   S     1832  1.5   2  0.0 /sbin/dnsmasq -u nobody --dhcp-aut
+28547 28515 root     S     1696  1.4   3  0.0 /bin/sh /www/sysinfo.cgi 
+28618 28547 root     S     1696  1.4   1  0.0 /bin/sh /www/sysinfo.cgi 
+ 5018  5017 root     S     1656  1.4   2  0.0 /sbin/dnsmasq -u nobody --dhcp-aut
+28515 28490 root     S     1640  1.4   1  0.0 /bin/sh /etc/init.d/service_data_u
+13711     1 root     S     1620  1.3   3  0.0 crond -l 9 -c /var/spool/cron/cron
+10229     1 root     S     1616  1.3   3  0.0 udhcpc -R -S -b -i eth3 -h **OMITTED ROUTER HOSTNAME**
+ 3826     1 root     S     1612  1.3   3  0.0 -/sbin/getty -L ttyS1 115200 
+    1     0 root     S     1608  1.3   1  0.0 init       
+ 2367     1 root     S     1604  1.3   1  0.0 /sbin/syslogd -l 6 
+ 1902     1 root     S     1600  1.3   2  0.0 /sbin/klogd 
+ 4255     1 root     S     1584  1.3   3  0.0 trigger 
+ 9233     1 root     S <   1464  1.2   2  0.0 /usr/bin/nfqrecv 
+ 9953     1 root     S     1260  1.0   0  0.0 /sbin/dhcp6s -P /var/run/dhcp6s.pi
+ 4538     1 root     S     1256  1.0   1  0.0 mdnsd 
+ 5683     1 root     S     1212  1.0   0  0.0 iwevent 
+ 5400     1 root     S     1056  0.9   2  0.0 lld2d br0 
+ 4927     1 root     S     1036  0.8   1  0.0 /sbin/dns-sd -R myrouter _http._tc
+ 3815     1 root     S     1008  0.8   3  0.0 /usr/sbin/bdutil 
+ 3820  3815 root     S     1008  0.8   3  0.0 /usr/sbin/bdutil 
+ 1037     1 root     S <   1004  0.8   3  0.0 /sbin/udevd --daemon 
+ 2386     1 root     S     1000  0.8   3  0.0 syseventd_fork_helper 8 
+10992 10990 root     S      752  0.6   3  0.0 wscd -m 1 -w /etc/Wireless -a **OMITTED
+11000 10990 root     S      752  0.6   1  0.0 wscd -m 1 -w /etc/Wireless -a **OMITTED
+10993 10990 root     S      752  0.6   0  0.0 wscd -m 1 -w /etc/Wireless -a **OMITTED
+16000 10990 root     S      752  0.6   2  0.0 wscd -m 1 -w /etc/Wireless -a **OMITTED
+20043 10990 root     S      752  0.6   1  0.0 wscd -m 1 -w /etc/Wireless -a **OMITTED
+10999 10990 root     S      752  0.6   0  0.0 wscd -m 1 -w /etc/Wireless -a **OMITTED
+10984     1 root     S      752  0.6   0  0.0 wscd -m 1 -w /etc/Wireless -a **OMITTED
+10991 10990 root     S      752  0.6   1  0.0 wscd -m 1 -w /etc/Wireless -a **OMITTED
+10990 10984 root     S      752  0.6   3  0.0 wscd -m 1 -w /etc/Wireless -a **OMITTED
+10997 10990 root     S      752  0.6   1  0.0 wscd -m 1 -w /etc/Wireless -a **OMITTED
+ 6756     2 root     SW       0  0.0   3  0.0 [RtmpMlmeTask]
+ 9057     2 root     SW       0  0.0   3  0.0 [RtmpMlmeTask]
+ 6754     2 root     SW       0  0.0   0  0.0 [RtmpCmdQTask]
+   15     2 root     SW       0  0.0   2  0.0 [ksoftirqd/2]
+    7     2 root     SW       0  0.0   0  0.0 [migration/0]
+   14     2 root     SW       0  0.0   2  0.0 [migration/2]
+   10     2 root     SW       0  0.0   1  0.0 [migration/1]
+   18     2 root     SW       0  0.0   3  0.0 [migration/3]
+ 9324     2 root     SW       0  0.0   3  0.0 [kworker/3:2]
+   11     2 root     SW       0  0.0   1  0.0 [ksoftirqd/1]
+   19     2 root     SW       0  0.0   3  0.0 [ksoftirqd/3]
+ 8793     2 root     SW       0  0.0   3  0.0 [HwCtrlTask]
+ 2352     2 root     SW       0  0.0   0  0.0 [ubi_bgt0d]
+    3     2 root     SW       0  0.0   0  0.0 [ksoftirqd/0]
+   36     2 root     SW       0  0.0   2  0.0 [kworker/2:1]
+  261     2 root     SW       0  0.0   0  0.0 [kworker/0:1]
+ 2357     2 root     SW       0  0.0   2  0.0 [ubifs_bgt0_0]
+    6     2 root     SW       0  0.0   0  0.0 [kworker/u8:0]
+    9     2 root     SW       0  0.0   2  0.0 [rcu_sched]
+ 8794     2 root     SW       0  0.0   3  0.0 [ser_task]
+   37     2 root     SW       0  0.0   1  0.0 [kworker/1:1]
+   23     2 root     SW       0  0.0   3  0.0 [kdevtmpfs]
+   35     2 root     SW       0  0.0   3  0.0 [kworker/3:1]
+ 6646     2 root     SW       0  0.0   1  0.0 [kworker/u8:3]
+  208     2 root     SW<      0  0.0   3  0.0 [writeback]
+  212     2 root     SW<      0  0.0   1  0.0 [crypto]
+  220     2 root     SW<      0  0.0   3  0.0 [ata_sff]
+  230     2 root     SW       0  0.0   3  0.0 [khubd]
+  233     2 root     SW<      0  0.0   3  0.0 [md]
+    2     0 root     SW       0  0.0   3  0.0 [kthreadd]
+  269     2 root     SW<      0  0.0   3  0.0 [nfsiod]
+  270     2 root     SW<      0  0.0   3  0.0 [cifsiod]
+  211     2 root     SW<      0  0.0   0  0.0 [bioset]
+  214     2 root     SW<      0  0.0   3  0.0 [kblockd]
+  992     2 root     SW<      0  0.0   3  0.0 [deferwq]
+ 7341     2 root     SW       0  0.0   0  0.0 [kworker/0:2]
+ 8791     2 root     SW       0  0.0   2  0.0 [RtmpCmdQTask]
+ 6755     2 root     SW       0  0.0   3  0.0 [RtmpWscTask]
+  260     2 root     SW<      0  0.0   3  0.0 [rpciod]
+    8     2 root     SW       0  0.0   1  0.0 [rcu_bh]
+   24     2 root     SW<      0  0.0   3  0.0 [netns]
+  267     2 root     SWN      0  0.0   3  0.0 [ksmd]
+  268     2 root     SW       0  0.0   3  0.0 [fsnotify_mark]
+   12     2 root     SW       0  0.0   1  0.0 [kworker/1:0]
+   13     2 root     SW<      0  0.0   1  0.0 [kworker/1:0H]
+  914     2 root     SW<      0  0.0   3  0.0 [bond0]
+  979     2 root     SW<      0  0.0   3  0.0 [ipv6_addrconf]
+   16     2 root     SW       0  0.0   2  0.0 [kworker/2:0]
+   17     2 root     SW<      0  0.0   2  0.0 [kworker/2:0H]
+    5     2 root     SW<      0  0.0   0  0.0 [kworker/0:0H]
+ 8792     2 root     SW       0  0.0   3  0.0 [RtmpWscTask]
+   21     2 root     SW<      0  0.0   3  0.0 [kworker/3:0H]
+   22     2 root     SW<      0  0.0   3  0.0 [khelper]
+  266     2 root     SW       0  0.0   3  0.0 [kswapd0]
+
+
+
+========================== Wi-Fi General Information ==========================
+Wifi driver version           : 
+Country code                  : US
+Device Serial Number          : ***OMITTED**
+2.4GHz enabled                : 1
+5GHz enabled                  : 1
+Guest enabled                 : 0
+SimpleTap enabled             : 
+
+----- MAC address (from ifconfig) -----
+LAN Mac Address               : ***OMITTED**
+WAN Mac Address               : ***OMITTED**
+User Mac Address (2.4G)       : ***OMITTED**
+User Mac Address (5G)         : ***OMITTED**
+
+------------- ra0 Settings -------------
+Interface name: ra0
+SSID: ***OMITTED**
+Mac address:  ***OMITTED**   
+Channel: ra0       0 channels
+          Current Channel=1
+Banwidth (0=auto,2=20HMz,3=40MHz): 
+Network Mode (1:b, 2:g, 3:b/g, 4:n[2.4GHz], 6:g/n, 7:b/g/n, 8:a, 12:a/n, 13:n[5GHz], 23:b/g/n/ac, 28:a/n/ac): 
+Guard Interval (0=auto,1=Short,2=Long): Current 
+Current connected client(s): MAC                AID BSS PSM WMM MIMOPS  RSSI0  RSSI1  RSSI2  RSSI3  PhMd      BW    MCS   SGI   STBC  Idle   Rate   TIME
+0C:CB:85:AD:62:89  1   0   0   1   3       -72    -73    -78    -65    VHT       80M   1S-M9  1     0     479    867    3608   0         , 0, 0%
+Tx Antennas (0=auto i.e all antennas, 1=antenna A, 2=antenna B, 3=antenna AB, 7=antenna ABC, 0xF= antenna ABCD): 
+Rx Antennas (0=auto,1=1 antenna, 2=2 antennas, 3=3 antennas, 4=4 antennas): 
+WMM mode (0=AC_BE, 1=AC_BK, 2=AC_VI, 3=AC_VO): 
+Optimization Level (0=harmony mode, 1=high performance): 
+Multicast Proxy (0=disable, 1=enable ): 
+Intra BSS bridging (0=disable wireless to wireless client bridging, 1=enable wireless to wireless client bridging): 
+SSID broacast (0=show and respond to probe requests, 1=hide and do not respond to probe requests) 
+Beacon interval (20-1000: interval in time units 1=1.024ms): 
+Power save DTIM (1-255): 
+11g protection (0=protection off, 1=protection auto): 
+Preamble (0=auto, 1=short preamble, 2=long preamble): 
+Idle aging time (60-86400 sec): 
+Associations to AP BSS (0=disable, 1=enable ): 
+WDS mode (0=disable, 1=enable ): 
+HT Greenfield mode (0=disable, 1=enable ): 
+Tx Power: 
+
+------------- rai0 Settings -------------
+Interface name: rai0
+SSID: ***OMITTED**
+Mac address: ***OMITTED**   Bit Rate=300 Mb/s   Sensitivity=2146548816/0  
+Channel: rai0      0 channels
+          Current Channel=157
+Banwidth (0=auto,2=20HMz,3=40MHz): 
+Network Mode (1:b, 2:g, 3:b/g, 4:n[2.4GHz], 6:g/n, 7:b/g/n, 8:a, 12:a/n, 13:n[5GHz], 23:b/g/n/ac, 28:a/n/ac): 
+Guard Interval (0=auto,1=Short,2=Long): Current 
+Current connected client(s): MAC                AID BSS PSM WMM MIMOPS  RSSI0  RSSI1  RSSI2  RSSI3  PhMd      BW    MCS   SGI   STBC  Idle   Rate   TIME
+***OMITTED**  1   0   0   1   3       -72    -70    -78    -65    VHT       80M   1S-M9  1     0     479    867    3608   0         , 0, 0%
+***OMITTED**  1   0   0   1   3       -59    -57    -78    -65    VHT       80M   1S-M9  1     0     479    867    3608   0         , 0, 0%
+***OMITTED**  1   0   0   1   3       -64    -64    -78    -65    VHT       80M   1S-M9  1     0     479    867    3608   0         , 0, 0%
+Tx Antennas (0=auto i.e all antennas, 1=antenna A, 2=antenna B, 3=antenna AB, 7=antenna ABC, 0xF= antenna ABCD): 
+Rx Antennas (0=auto,1=1 antenna, 2=2 antennas, 3=3 antennas, 4=4 antennas): 
+WMM mode (0=AC_BE, 1=AC_BK, 2=AC_VI, 3=AC_VO): 
+Optimization Level (0=harmony mode, 1=high performance): 
+Multicast Proxy (0=disable, 1=enable ): 
+Intra BSS bridging (0=disable wireless to wireless client bridging, 1=enable wireless to wireless client bridging): 
+SSID broacast (0=show and respond to probe requests, 1=hide and do not respond to probe requests) 
+Beacon interval (20-1000: interval in time units 1=1.024ms): 
+Power save DTIM (1-255): 
+11g protection (0=protection off, 1=protection auto): 
+Preamble (0=auto, 1=short preamble, 2=long preamble): 
+Idle aging time (60-86400 sec): 
+Associations to AP BSS (0=disable, 1=enable ): 
+WDS mode (0=disable, 1=enable ): 
+HT Greenfield mode (0=disable, 1=enable ): 
+Tx Power: 
+
+------------- Wi-Fi syscfg section -------------
+wifi::wl0_mumimo_enabled=1
+wifi_bridge::wl0_supported_sec_types=none wpa-personal wpa2-personal wpa-mixed
+wifi_scheduler::if_enabled="wl0 wl0_guest wl1 wl1_guest"
+wl0_256qam_enabled=0
+wl0_amsdu_enabled=1
+wl0_ap_isolation=disabled
+wl0_authentication_type=auto
+wl0_available_channels=1,2,3,4,5,6,7,8,9,10,11
+wl0_basic_rate=default
+wl0_beacon_interval=100
+wl0_channel=0
+wl0_cts_protection_mode=auto
+wl0_default_ssid=***OMITTED**
+wl0_dfs_enabled=0
+wl0_dtim_interval=1
+wl0_encryption=aes
+wl0_fragmentation_threshold=2346
+wl0_frame_burst=enabled
+wl0_grn_field_pre=disabled
+wl0_guest_enabled=0
+wl0_guest_vap=ra1
+wl0_ht_dup_mcs32=enabled
+wl0_ht_rdg=1
+wl0_key_renewal=3600
+wl0_mac_addr=***OMITTED**
+wl0_n_transmission_rate=auto
+wl0_network_mode=mixed
+wl0_network_modes=11b,11g,11n,11bg,11bgn,mixed
+wl0_physical_ifname=ra0
+wl0_pmf=disabled
+wl0_power_table=/etc/24G_power_table_FCC
+wl0_radio_band=auto
+wl0_radius_port=1812
+wl0_rts_threshold=2347
+wl0_security_mode=wpa2-personal
+wl0_shared=0
+wl0_sideband=lower
+wl0_ssid=***OMITTED**
+wl0_ssid_broadcast=1
+wl0_state=up
+wl0_stbc=disabled
+wl0_supported_sec_types=none wpa2-personal wpa2-enterprise
+wl0_transmission_power=high
+wl0_transmission_rate=auto
+wl0_tx_key=1
+wl0_txbf_3x3_only=0
+wl0_txbf_enabled=0
+wl0_user_vap=ra0
+wl0_wmm_ps=enabled
+wl0_wps_state=disabled
+
+wifi::wl1_mumimo_enabled=1
+wifi_bridge::wl1_supported_sec_types=none wpa-personal wpa2-personal wpa-mixed
+wifi_scheduler::if_enabled="wl0 wl0_guest wl1 wl1_guest"
+wl1_ac_supported=1
+wl1_amsdu_enabled=1
+wl1_ap_isolation=disabled
+wl1_authentication_type=auto
+wl1_available_channels=36,40,44,48,149,153,157,161,165
+wl1_basic_rate=default
+wl1_beacon_interval=100
+wl1_channel=0
+wl1_chip=11ac
+wl1_cts_protection_mode=auto
+wl1_default_ssid=***OMITTED**
+wl1_dfs_enabled=1
+wl1_dtim_interval=1
+wl1_encryption=aes
+wl1_fragmentation_threshold=2346
+wl1_frame_burst=enabled
+wl1_grn_field_pre=disabled
+wl1_guest_enabled=1
+wl1_guest_ssid=***OMITTED**
+wl1_guest_ssid_broadcast=1
+wl1_guest_vap=rai1
+wl1_guest_wifi_phy_ifname=wl1
+wl1_ht_dup_mcs32=enabled
+wl1_ht_rdg=1
+wl1_key_renewal=3600
+wl1_mac_addr=***OMITTED**
+wl1_n_transmission_rate=auto
+wl1_network_mode=11a 11n
+wl1_network_modes=11a,11n,11an,11ac,mixed
+wl1_physical_ifname=rai0
+wl1_pmf=disabled
+wl1_power_table=/etc/5G_power_table_FCC
+wl1_radio_band=auto
+wl1_radius_port=1812
+wl1_rts_threshold=2347
+wl1_security_mode=wpa2-personal
+wl1_shared=0
+wl1_sideband=lower
+wl1_ssid=***OMITTED**
+wl1_ssid_broadcast=1
+wl1_state=up
+wl1_stbc=disabled
+wl1_supported_sec_types=none wpa2-personal wpa2-enterprise
+wl1_transmission_power=high
+wl1_transmission_rate=auto
+wl1_tx_key=1
+wl1_txbf_3x3_only=0
+wl1_txbf_enabled=0
+wl1_user_vap=rai0
+wl1_wmm_ps=enabled
+wl1_wps_state=disabled
+
+guest_auth_port=10080
+guest_dhcp_lease_time=3600
+guest_dhcp_start=100
+guest_enabled=0
+guest_lan_ifname=br1
+guest_lan_ipaddr=***OMITTED**
+guest_lan_netmask=255.255.255.0
+guest_logging=1
+guest_max_allowed=5
+guest_max_allowed_limit=50
+guest_max_duration=24
+guest_redirector=51000
+guest_ssid=***OMITTED**
+guest_ssid_broadcast=0
+guest_ssid_suffix=-guest
+guest_subnet=***OMITTED**
+guest_vlan_id=3
+guest_wifi_phy_ifname=wl0
+parental_control_guest_default_policy=0
+wl0_guest_enabled=0
+wl0_guest_vap=ra1
+wl1_guest_enabled=1
+wl1_guest_ssid=***OMITTED**
+wl1_guest_ssid_broadcast=1
+wl1_guest_vap=rai1
+wl1_guest_wifi_phy_ifname=wl1
+========================== End Of Wi-Fi General Information ==========================
+ifconfig:
+
+br0       Link encap:Ethernet  HWaddr ***OMITTED**  
+          inet addr:**OMITTED ROUTER LOCAL IP**  Bcast:***OMITTED**  Mask:***OMITTED**
+          inet6 addr: ***OMITTED** Scope:Link
+          UP BROADCAST RUNNING ALLMULTI MULTICAST  MTU:1500  Metric:1
+          RX packets:11866136 errors:0 dropped:36 overruns:0 frame:0
+          TX packets:10559103 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:2120500404 (1.9 GiB)  TX bytes:5269229026 (4.9 GiB)
+
+eth2      Link encap:Ethernet  HWaddr ***OMITTED**  
+          inet6 addr: ***OMITTED** Scope:Link
+          UP BROADCAST RUNNING ALLMULTI MULTICAST  MTU:1500  Metric:1
+          RX packets:74172073 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:40758467 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:600995963 (573.1 MiB)  TX bytes:3814561466 (3.5 GiB)
+          Interrupt:3 
+
+eth3      Link encap:Ethernet  HWaddr ***OMITTED**  
+          inet addr:***OMITTED**  Bcast:***OMITTED**  Mask:***OMITTED**
+          inet6 addr: ***OMITTED** Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:123246190 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:8885958 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:3252786293 (3.0 GiB)  TX bytes:2056298823 (1.9 GiB)
+
+lo        Link encap:Local Loopback  
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:383052 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:383052 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0 
+          RX bytes:40823936 (38.9 MiB)  TX bytes:40823936 (38.9 MiB)
+
+ra0       Link encap:Ethernet  HWaddr ***OMITTED**  
+          inet6 addr: ***OMITTED** Scope:Link
+          UP BROADCAST RUNNING ALLMULTI MULTICAST  MTU:1500  Metric:1
+          RX packets:16399882 errors:2651 dropped:0 overruns:0 frame:0
+          TX packets:21299719 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:3150961842 (2.9 GiB)  TX bytes:2216935208 (2.0 GiB)
+          Interrupt:4 
+
+rai0      Link encap:Ethernet  HWaddr ***OMITTED**  
+          inet6 addr: ***OMITTED** Scope:Link
+          UP BROADCAST RUNNING ALLMULTI MULTICAST  MTU:1500  Metric:1
+          RX packets:29687143 errors:1837560 dropped:0 overruns:0 frame:0
+          TX packets:51267986 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:1512776575 (1.4 GiB)  TX bytes:791503845 (754.8 MiB)
+          Interrupt:24 
+
+cat /etc/resolv.conf:
+
+search ***OMITTED**
+nameserver 127.0.0.1
+nameserver ***OMITTED**
+nameserver ***OMITTED**
+
+ip link:
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN 
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: bond0: <BROADCAST,MULTICAST,MASTER> mtu 1500 qdisc noop state DOWN 
+    link/ether ***OMITTED** brd ff:ff:ff:ff:ff:ff
+3: rai0: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master br0 state UNKNOWN qlen 1000
+    link/ether ***OMITTED** brd ff:ff:ff:ff:ff:ff
+4: eth2: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master br0 state UNKNOWN qlen 1000
+    link/ether ***OMITTED** brd ff:ff:ff:ff:ff:ff
+5: tunl0: <NOARP> mtu 0 qdisc noop state DOWN 
+    link/ipip 0.0.0.0 brd 0.0.0.0
+6: sit0: <NOARP> mtu 1480 qdisc noop state DOWN 
+    link/sit 0.0.0.0 brd 0.0.0.0
+7: ip6tnl0@NONE: <NOARP> mtu 1452 qdisc noop state DOWN 
+    link/tunnel6 :: brd ::
+8: ip6gre0@NONE: <NOARP> mtu 1448 qdisc noop state DOWN 
+    link/[823] 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00 brd 00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00
+9: eth3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UNKNOWN qlen 1000
+    link/ether ***OMITTED** brd ff:ff:ff:ff:ff:ff
+10: br0: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP 
+    link/ether ***OMITTED** brd ff:ff:ff:ff:ff:ff
+11: ra0: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast master br0 state UNKNOWN qlen 1000
+    link/ether ***OMITTED** brd ff:ff:ff:ff:ff:ff
+12: ra1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN qlen 1000
+    link/ether ***OMITTED** brd ff:ff:ff:ff:ff:ff
+13: apcli0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN qlen 1000
+    link/ether ***OMITTED** brd ff:ff:ff:ff:ff:ff
+14: rai1: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN qlen 1000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
+15: apclii0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN qlen 1000
+    link/ether ***OMITTED** brd ff:ff:ff:ff:ff:ff
+
+ip neigh:
+
+***OMITTED** dev br0 lladdr ***OMITTED** STALE
+***OMITTED** dev eth3  router FAILED
+***OMITTED** dev br0 lladdr ***OMITTED** STALE
+***OMITTED** dev br0  FAILED
+***OMITTED** dev br0 lladdr ***OMITTED** REACHABLE
+***OMITTED** dev br0 lladdr ***OMITTED** STALE
+***OMITTED** dev eth3 lladdr ***OMITTED** STALE
+***OMITTED** dev br0 lladdr ***OMITTED** STALE
+***OMITTED** dev br0  FAILED
+***OMITTED** dev br0  FAILED
+***OMITTED** dev eth3 lladdr ***OMITTED** STALE
+***OMITTED** dev br0 lladdr ***OMITTED** STALE
+***OMITTED** dev br0 lladdr ***OMITTED** REACHABLE
+***OMITTED** dev br0  FAILED
+***OMITTED** dev br0 lladdr ***OMITTED** REACHABLE
+***OMITTED** dev br0 lladdr ***OMITTED** REACHABLE
+***OMITTED** dev br0 lladdr ***OMITTED** REACHABLE
+
+ip -6 addr show:
+
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+3: rai0: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 qlen 1000
+    inet6 ***OMITTED** scope link 
+       valid_lft forever preferred_lft forever
+4: eth2: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 qlen 1000
+    inet6 ***OMITTED** scope link 
+       valid_lft forever preferred_lft forever
+9: eth3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qlen 1000
+    inet6 ***OMITTED** scope link 
+       valid_lft forever preferred_lft forever
+10: br0: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 
+    inet6 ***OMITTED** scope link 
+       valid_lft forever preferred_lft forever
+11: ra0: <BROADCAST,MULTICAST,ALLMULTI,UP,LOWER_UP> mtu 1500 qlen 1000
+    inet6 ***OMITTED** scope link 
+       valid_lft forever preferred_lft forever
+
+ip route:
+
+default via ***OMITTED** dev eth3 
+***OMITTED** dev br0  proto kernel  scope link  src **OMITTED ROUTER LOCAL IP** 
+***OMITTED** dev eth3  proto kernel  scope link  src ***OMITTED ROUTER WAN IP** 
+***OMITTED** dev eth3  scope link 
+***OMITTED** dev lo  scope link 
+
+ip -6 route show:
+
+***OMITTED** dev eth2  proto kernel  metric 256 
+***OMITTED** dev br0  proto kernel  metric 256 
+***OMITTED** dev eth3  proto kernel  metric 256 
+***OMITTED** dev ra0  proto kernel  metric 256 
+***OMITTED** dev rai0  proto kernel  metric 256 
+
+ip tunnel show:
+
+tunl0: ip/ip  remote any  local any  ttl inherit  nopmtudisc
+sit0: ipv6/ip  remote any  local any  ttl 64  nopmtudisc 6rd-prefix ***OMITTED** 
+
+rdisc6 -r1 :
+
+
+
+rdisc6 -r1 ppp0:
+
+
+
+ping www.ietf.org:
+
+PING www.ietf.org (104.16.44.99): 56 data bytes
+64 bytes from 104.16.44.99: seq=0 ttl=57 time=13.480 ms
+64 bytes from 104.16.44.99: seq=1 ttl=57 time=13.620 ms
+
+--- www.ietf.org ping statistics ---
+2 packets transmitted, 2 packets received, 0% packet loss
+round-trip min/avg/max = 13.480/13.550/13.620 ms
+
+ping 8.8.8.8:
+
+PING 8.8.8.8 (8.8.8.8): 56 data bytes
+64 bytes from 8.8.8.8: seq=0 ttl=57 time=13.160 ms
+64 bytes from 8.8.8.8: seq=1 ttl=57 time=14.420 ms
+
+--- 8.8.8.8 ping statistics ---
+2 packets transmitted, 2 packets received, 0% packet loss
+round-trip min/avg/max = 13.160/13.790/14.420 ms
+
+NIC Counters
+  br0 :           RX bytes:2120501474 (1.9 GiB)  TX bytes:5269232628 (4.9 GiB)
+ eth0 : 
+ eth1 : 
+ eth2 :           RX bytes:600997549 (573.1 MiB)  TX bytes:3814562672 (3.5 GiB)
+vlan1 : 
+vlan2 : 
+wl1.2 : 
+
+usb messages to dmesg
+
+disk information:
+
+Error: Could not stat device /dev/sd? - No such file or directory.
+
+mounted filesystems:
+
+rootfs on / type rootfs (rw)
+/dev/root on / type jffs2 (ro,relatime)
+devtmpfs on /dev type devtmpfs (rw,relatime,size=58128k,nr_inodes=14532,mode=755)
+none on /proc type proc (rw,relatime)
+none on /sys type sysfs (rw,relatime)
+mdev on /dev type tmpfs (rw,relatime,size=100k)
+none on /tmp type tmpfs (rw,relatime,size=40960k)
+none on /dev/pts type devpts (rw,relatime,mode=600)
+memory on /cgroup type cgroup (rw,relatime,memory)
+ubi0_0 on /tmp/var/config type ubifs (rw,sync,relatime)
+list of open files
+
+=================================== Historical Data ===================================
+
